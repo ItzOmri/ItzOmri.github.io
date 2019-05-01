@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!-- saved from url=(0851)https://wix-visual-data.appspot.com/app/widget?cacheKiller=1556718444593&compId=comp-jv5e37rp&deviceType=desktop&height=509&instance=aoud2LgnBH_KkwxyV7EObk951EXIMR22VBmQRVMLK9A.eyJpbnN0YW5jZUlkIjoiNmMwZjY1ZGQtNjJmZi00MDE1LTllMmEtZjJjNzc3NmZhY2ZhIiwiYXBwRGVmSWQiOiIxMzQxMzlmMy1mMmEwLTJjMmMtNjkzYy1lZDIyMTY1Y2ZkODQiLCJtZXRhU2l0ZUlkIjoiYTkzNjYxMGItMjk5Ni00MTM1LTg3NDUtZjM1ZGE3YzU2ZjJlIiwic2lnbkRhdGUiOiIyMDE5LTA1LTAxVDE2OjE4OjEwLjYzN1oiLCJ1aWQiOm51bGwsImlwQW5kUG9ydCI6IjE3Ni4yMzAuMTYxLjE5OS8zNzAyNCIsInZlbmRvclByb2R1Y3RJZCI6bnVsbCwiZGVtb01vZGUiOmZhbHNlLCJhaWQiOiJlNjBmYTgxNS1mMGUxLTQ4MjItOGJhOC1kMTc3N2MxMjA5ZWQiLCJiaVRva2VuIjoiYzUzOTA0ZDYtNGI2OS0wMTIwLTE5NmYtMDE5YWQwYWFjM2Q0Iiwic2l0ZU93bmVySWQiOiJkZWZkNzA0Mi0wOGJjLTQwODEtYTkzZC02YTcwODVhYTI0MjQifQ&locale=en&pageId=cs8oy&siteRevision=30&viewMode=site&vsi=ac62819f-ca98-417b-b6f0-77a2cc68ad96&width=980 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Visual Data</title>
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <link href="./bootstrap-responsive.min.css" rel="stylesheet">
+    <script type="text/javascript" src="./jquery.min.js.download"></script>
+
+
+
+    <link href="./widget.css" rel="stylesheet" type="text/css">
+    <script src="./widget.js.download"></script>
+
+    <style wix-style="">
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+        }
+
+        #theTable > tbody{
+            font:normal normal normal 16px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+        }
+        #theTable > thead{
+            font:normal normal normal 18px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+        }
+        #theTable > thead > tr > th{
+            color:#FFFFFF;
+            background-color: #517C45;
+            background-image: none;
+            vertical-align: top;
+        }
+        #theTable > tbody > tr {
+            color:#000000;
+        }
+        .footable-row-detail-name {
+            color:#FFFFFF;
+            background-color: #517C45;
+            border: 1px solid #605E5E;
+            font:normal normal normal 18px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+
+        /* to hide the inside headers in the mobile expand view
+            display:none;
+         */
+        }
+        body{
+            border-color: #605E5E;
+        }
+        #theTable.isInnerColor{
+            border-top-color: #605E5E;
+            border-bottom-color: #605E5E;
+
+        }
+        #theTable.isInnerColor {
+            border-right: none;
+            border-left: none;
+        }
+        .footable-row-detail-value {
+            border: 1px solid #605E5E;
+            font:normal normal normal 16px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+        }
+        .footable-sort-indicator{
+            font:normal normal normal 16px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+        }
+
+        tr.footableOdd + tr.footable-row-detail > td > div > table > tbody > tr > td.footable-row-detail-value{
+            background-color: #0088CB
+         }
+
+        tr.footableEven + tr.footable-row-detail > td > div > table > tbody > tr > td.footable-row-detail-value{
+            background-color: #FFFFFF;
+        }
+
+        .footableOdd {
+            background-color: #0088CB;
+            }
+
+        .footableEven {
+            background-color: #FFFFFF;
+        }
+
+
+        .footable>tbody>tr:hover {
+            background-color: #FFFFFF;
+        }
+
+        .footable,
+        .footable> thead > tr > th,
+        .footable > tbody > tr > td {
+            border-color: #605E5E;
+            border-left-color: #605E5E;
+        }
+
+        .footable .pagination > ul > li > a{
+            border-color: #605E5E;
+        }
+
+        .filter> thead > tr > th,
+        .footable > thead > tr > th,
+        .footable > thead > tr > td {
+            background-color: #605E5E;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#605E5E), to(#605E5E));
+            background-image: -webkit-linear-gradient(top, #605E5E, #605E5E);
+            background-image: -moz-linear-gradient(top, #605E5E, #605E5E);
+            background-image: -ms-linear-gradient(top, #605E5E, #605E5E);
+            background-image: -o-linear-gradient(top, #605E5E, #605E5E);
+            background-image: linear-gradient(to bottom, #605E5E, #605E5E);
+        }
+        .footable > thead > tr > th,
+        .footable > thead > tr > td {
+            background-color: #605E5E;
+        }
+
+
+        .footable > tfoot > tr > th,
+        .footable > tfoot > tr > td {
+            background-color: #605E5E;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#605E5E), to(#605E5E));
+            background-image: -webkit-linear-gradient(top, #605E5E, #605E5E);
+            background-image: -moz-linear-gradient(top, #605E5E, #605E5E);
+            background-image: -ms-linear-gradient(top, #605E5E, #605E5E);
+            background-image: -o-linear-gradient(top, #605E5E, #605E5E);
+            background-image: linear-gradient(to bottom, #605E5E, #605E5E);
+        }
+
+        .footable .pagination > ul > .disabled > span,
+        .footable .pagination > ul > .disabled > a,
+        .footable .pagination > ul > .disabled > a:hover,
+        .footable .pagination > ul > .disabled > a:focus {
+            background-color: #605E5E;
+            }
+        .footable .pagination > ul > li > a:hover,
+        .footable .pagination > ul > li > a:focus,
+        .footable .pagination > ul > .active > a,
+        .footable .pagination > ul > .active > span {
+            background-color: #A0A09F;
+        }
+        .preview,.error {
+            display:none;
+            background-color:white;
+        }
+        .option {
+            width: 120px;
+        }
+        .searchBox{
+            width: 147px;
+            height: 23px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            background-color: rgba(255,255,255,0.8);
+            color:#000;/*#FFFFFF;*/
+            -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.4);
+            -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.4);
+            box-shadow: inset 0 1px 2px rgba(0,0,0,.4);
+            margin-top: 1px;
+            outline: 0;
+            border:0;
+            padding: 0 6px;
+            font-size: 12px;
+        }
+        ::-webkit-input-placeholder {
+            color:#000;/*#FFFFFF;*/
+            opacity:0.5;
+        }
+
+        :-moz-placeholder { /* Firefox 18- */
+            color:#000;
+            opacity:0.5;
+        }
+
+        ::-moz-placeholder {  /* Firefox 19+ */
+            color:#000;
+            opacity:0.5;
+        }
+
+        :-ms-input-placeholder {
+            color:#000;
+            opacity:0.5;
+        }
+         /*       .filter{
+            border-collapse: separate;
+            border-spacing: 0;
+            border-width: 1px 1px 0 1px;
+            border-style: solid;
+            color: #444444;
+            background: #ffffff;
+            margin :0;
+        }
+*/
+        #tableWrapper::-webkit-scrollbar{-webkit-appearance:none;width:10px;height:10px;border:1px solid #605E5E}
+        #tableWrapper::-webkit-scrollbar-track{background-color:#0088CB}
+        #tableWrapper::-webkit-scrollbar-corner{background-color:#FFFFFF}
+        #tableWrapper::-webkit-scrollbar-thumb{border-radius:5px;background-color:#FFFFFF;border:solid 1px #0088CB;}
+/*
+        #tableWrapper::-webkit-scrollbar-thumb:horizontal{border-color:#605E5E}
+*/
+        #tableWrapper::-webkit-scrollbar-thumb:hover{background-color:#FFFFFF;}
+
+    </style>
+     <script>
+        var settings = {"title":null,"csvUrl":null,"origVersion":null,"viewType":"table","data":{"csvString":"Staff's Username:,Online Time:,Pages,Inactivity Post,Warnings\nItzOmri,72h & 20m,Unknown,No,0\nSearchForMe,Unknown,Unknown,No,0\nUnalert,Unknown,Unknown,No,0\nZphre,Unknown,Unknown,No,0\nGreggs_,Unknown,Unknown,No,0\niTzAndreas120,Unknown,Unknown,No,0\nKai,Unknown,Unknown,No,0\nMoni,Unknown,Unknown,No,0\nSubstaince,Unknown,Unknown,No,0\nSixnations,Unknown,Unknown,No,0\nSundra,Unknown,Unknown,No,0\n","csvUrl":"https://docs.google.com/spreadsheets/d/e/2PACX-1vTkGJh6alGDPbYoNpSD2qG7Q1Vnr0UWBHdeg7Diy-avlg4GjpMEpSQkdxZssryQK8TnKCkKmK52A2xa/pub?output=csv","type":"csvString"},"tableParams":{"radius":3,"filterText":"Search"},"pieChartParams":{},"columnChartParams":{},"lineChartParams":{},"areaChartParams":null};
+        var endpoint = 'desktop';
+        var instance= 'aoud2LgnBH_KkwxyV7EObk951EXIMR22VBmQRVMLK9A.eyJpbnN0YW5jZUlkIjoiNmMwZjY1ZGQtNjJmZi00MDE1LTllMmEtZjJjNzc3NmZhY2ZhIiwiYXBwRGVmSWQiOiIxMzQxMzlmMy1mMmEwLTJjMmMtNjkzYy1lZDIyMTY1Y2ZkODQiLCJtZXRhU2l0ZUlkIjoiYTkzNjYxMGItMjk5Ni00MTM1LTg3NDUtZjM1ZGE3YzU2ZjJlIiwic2lnbkRhdGUiOiIyMDE5LTA1LTAxVDE2OjE4OjEwLjYzN1oiLCJ1aWQiOm51bGwsImlwQW5kUG9ydCI6IjE3Ni4yMzAuMTYxLjE5OS8zNzAyNCIsInZlbmRvclByb2R1Y3RJZCI6bnVsbCwiZGVtb01vZGUiOmZhbHNlLCJhaWQiOiJlNjBmYTgxNS1mMGUxLTQ4MjItOGJhOC1kMTc3N2MxMjA5ZWQiLCJiaVRva2VuIjoiYzUzOTA0ZDYtNGI2OS0wMTIwLTE5NmYtMDE5YWQwYWFjM2Q0Iiwic2l0ZU93bmVySWQiOiJkZWZkNzA0Mi0wOGJjLTQwODEtYTkzZC02YTcwODVhYTI0MjQifQ';
+        settings = jQuery.extend({}, settings);
+        var version = '1-2-5.415624533716711276';
+        var pageManager;
+//        google.load("visualization", "1", {packages:["corechart"]});
+    function fixErrorVal(value){
+        if(value.indexOf('"')>=0 || value.indexOf(',')>=0){
+            value = value.replace(/"/g,'""');
+            value = '"'+value+'"';
+        }
+        return value;
+    }
+        $(document).ready(function() {
+            pageManager = new PageManager();
+            pageManager.init(settings, endpoint,
+                    {
+                        loaderErrorTitle: fixErrorVal('We are having problems loading your table information.'),
+                        loaderErrorBody: fixErrorVal('Make sure to follow the instructions in the Settings Panel'),
+                        loaderErrorTitleEmpty: fixErrorVal('Hey, your table is empty.'),
+                        loaderErrorBodyEmpty: fixErrorVal('You\'ll need to add some information'),
+                        loaderErrorTitleCsv: fixErrorVal('Oops! The URL you entered does not point to a google spreadsheet or a CSV file.'),
+                        loaderErrorBodyCsv: fixErrorVal('Please check the link and try again'),
+                        loaderErrorTitleViewer: fixErrorVal('This table is empty.'),
+                        loaderErrorBodyViewer: fixErrorVal('Nothing to see here'),
+                        loaderErrorTitle400: fixErrorVal('Oops! The URL you entered doesn\'t work.'),
+                        loaderErrorBody400: fixErrorVal('Please check the link and try again'),
+                        loaderErrorTitle403: fixErrorVal('Humm, it seems your Google spreadsheet is set to private.'),
+                        loaderErrorBody403: fixErrorVal('To make it public: Open App Settings > Go to Data Source and follow the instructions'),
+                        loaderErrorTitle404: fixErrorVal('Oops! The URL you entered doesn\'t exist.'),
+                        loaderErrorBody404: fixErrorVal('Please check the link and try again'),
+                        loaderErrorTitle500: fixErrorVal('Ouch! Something broke.'),
+                        loaderErrorBody500: fixErrorVal('The server sending the table information reported a problem'),
+                        loaderErrorTitle503: fixErrorVal('Ouch! Something broke.'),
+                        loaderErrorBody503: fixErrorVal('The server sending the table information is temporarily offline, try again in a few minutes'),
+                    },
+                    'aoud2LgnBH_KkwxyV7EObk951EXIMR22VBmQRVMLK9A.eyJpbnN0YW5jZUlkIjoiNmMwZjY1ZGQtNjJmZi00MDE1LTllMmEtZjJjNzc3NmZhY2ZhIiwiYXBwRGVmSWQiOiIxMzQxMzlmMy1mMmEwLTJjMmMtNjkzYy1lZDIyMTY1Y2ZkODQiLCJtZXRhU2l0ZUlkIjoiYTkzNjYxMGItMjk5Ni00MTM1LTg3NDUtZjM1ZGE3YzU2ZjJlIiwic2lnbkRhdGUiOiIyMDE5LTA1LTAxVDE2OjE4OjEwLjYzN1oiLCJ1aWQiOm51bGwsImlwQW5kUG9ydCI6IjE3Ni4yMzAuMTYxLjE5OS8zNzAyNCIsInZlbmRvclByb2R1Y3RJZCI6bnVsbCwiZGVtb01vZGUiOmZhbHNlLCJhaWQiOiJlNjBmYTgxNS1mMGUxLTQ4MjItOGJhOC1kMTc3N2MxMjA5ZWQiLCJiaVRva2VuIjoiYzUzOTA0ZDYtNGI2OS0wMTIwLTE5NmYtMDE5YWQwYWFjM2Q0Iiwic2l0ZU93bmVySWQiOiJkZWZkNzA0Mi0wOGJjLTQwODEtYTkzZC02YTcwODVhYTI0MjQifQ', 'comp-jv5e37rp', version
+            );
+        });
+
+    </script>
+<script src="./polyfill.min.js.download" id="dynamic_script_POLYFILL"></script><style wix-style="">.Title{ font:normal normal normal 22px/1.4em avenir-lt-w01_85-heavy1475544,sans-serif; } .Menu{ font:normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Page-title{ font:normal normal normal 70px/1.4em avenir-lt-w01_85-heavy1475544,sans-serif; } .Heading-XL{ font:normal normal normal 70px/1.4em avenir-lt-w01_85-heavy1475544,sans-serif; } .Heading-L{ font:normal normal normal 30px/1.4em avenir-lt-w01_85-heavy1475544,sans-serif; } .Heading-M{ font:normal normal normal 22px/1.4em avenir-lt-w01_85-heavy1475544,sans-serif; } .Heading-S{ font:normal normal normal 22px/1.4em enriqueta,serif; } .Body-L{ font:normal normal normal 18px/1.4em avenir-lt-w01_35-light1475496,sans-serif; } .Body-M{ font:normal normal normal 16px/1.4em avenir-lt-w01_35-light1475496,sans-serif; } .Body-S{ font:normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif; } .Body-XS{ font:normal normal normal 12px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } }</style><link type="text/css" rel="stylesheet" href="./css" id="wix-google-fonts"><link type="text/css" rel="stylesheet" href="./languages.css"><style></style></head>
+
+<body>
+<div class="error">
+    <div id="errorTitle" style="font-weight:bold">&nbsp;</div>
+    <div id="errorData">&nbsp;</div>
+</div>
+<div id="chartTableDiv" style="">
+    <table id="filterTable" class="filter outerBorder" style="width:100%;">
+        <thead>
+        <tr>
+            <th colspan="100%" style="height:37px;text-align: center;">
+                <div id="filterBox" style=""><input id="filterInput" type="text" class="searchBox" placeholder="Search"></div>
+            </th>
+        </tr>
+        </thead>
+    </table>
+</div>
+<div id="tableWrapper" style="overflow: auto; max-height: 446px;">
+    <table id="theTable" class="footable table outerBorder footable-loaded isInnerColor" style="width: 100%; margin: 0px;">
+    <thead><tr><th id="thCol0" data-type="alpha" class="footable-sortable">Staff's Username:<span class="footable-sort-indicator"></span></th><th id="thCol1" data-type="alpha" class="footable-sortable">Online Time:<span class="footable-sort-indicator"></span></th><th id="thCol2" data-type="alpha" class="footable-sortable">Pages<span class="footable-sort-indicator"></span></th><th id="thCol3" data-type="alpha" class="footable-sortable">Inactivity Post<span class="footable-sort-indicator"></span></th><th id="thCol4" data-type="numeric" class="footable-sortable">Warnings<span class="footable-sort-indicator"></span></th></tr></thead><tbody><tr class="footableOdd"><td>ItzOmri</td><td>72h &amp; 20m</td><td>Unknown</td><td>No</td><td>0</td></tr><tr class="footableEven"><td>SearchForMe</td><td>Unknown</td><td>Unknown</td><td>No</td><td>0</td></tr><tr class="footableOdd"><td>Unalert</td><td>Unknown</td><td>Unknown</td><td>No</td><td>0</td></tr><tr class="footableEven"><td>Zphre</td><td>Unknown</td><td>Unknown</td><td>No</td><td>0</td></tr><tr class="footableOdd"><td>Greggs_</td><td>Unknown</td><td>Unknown</td><td>No</td><td>0</td></tr><tr class="footableEven"><td>iTzAndreas120</td><td>Unknown</td><td>Unknown</td><td>No</td><td>0</td></tr><tr class="footableOdd"><td>Kai</td><td>Unknown</td><td>Unknown</td><td>No</td><td>0</td></tr><tr class="footableEven"><td>Moni</td><td>Unknown</td><td>Unknown</td><td>No</td><td>0</td></tr><tr class="footableOdd"><td>Substaince</td><td>Unknown</td><td>Unknown</td><td>No</td><td>0</td></tr><tr class="footableEven"><td>Sixnations</td><td>Unknown</td><td>Unknown</td><td>No</td><td>0</td></tr><tr class="footableOdd"><td>Sundra</td><td>Unknown</td><td>Unknown</td><td>No</td><td>0</td></tr></tbody></table>
+</div>
+<table id="pagerFilter" class="footable footer outerBorder" style="width: 100%; margin: 0px;">
+    <tfoot id="noPager">
+    <tr>
+        <td colspan="100%" style="height:26px;"></td>
+        </tr>
+    </tfoot>
+</table>
+<div id="chartDiv" tyle="display:none"></div>
+<script type="text/javascript" src="./wix-private.min.js.download"></script>
+
+
+
+</body></html>
